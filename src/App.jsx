@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer"; 
 import Cuerpo from "./components/cuerpo/cuerpo";
 import Tarjeta from "./components/tarjetas/Tarjetas";
+import Carrito from "./components/carrito/carrito";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   description="corrector de ojeras, base liquida, rimmel"
   price="$50000"
   />  
+   <Carrito/>
   </div>
   <Footer/> 
   </div>

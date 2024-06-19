@@ -1,11 +1,11 @@
 import './Tarjetas.css'
 
-const Tarjeta = (props) => {
+const Tarjeta = ( {title, description, price} ) => {
     return (
     <div className='ficha'>
-    <h1>{props.title}</h1>
-    <h2>{props.description}</h2>
-    <h3>{props.price}</h3>
+    <h1>{title}</h1>
+    <h2>{description}</h2>
+    <h3>{price}</h3>
     </div>
    )
 }; 
