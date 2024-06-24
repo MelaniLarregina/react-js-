@@ -1,5 +1,5 @@
+import CartWidget from '../../../CardWidget/CardWidget';
 import './Navbar.css'
-import { RiShoppingCartLine } from "react-icons/ri";
 
 const Navbar = () => {
     return <div className='bar'>
@@ -9,10 +9,9 @@ const Navbar = () => {
       <li>Productos</li>
       <li>Informacion</li>
     </ul>
-    <RiShoppingCartLine color='black' size={40}/>
-    <span className='span'>0</span>
+   < CartWidget />
     </div>
-   
+    
     
     
 
