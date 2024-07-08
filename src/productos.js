@@ -1,10 +1,10 @@
-export let productos = [
+let productos = [
     {
         id:1,
         title: "leche de limpieza", 
         price: 9000 ,
         description: "Sirve para eliminar el maquillaje y limpiar el rostro de pintura y base. " , 
-        img:"" , 
+        img: "" , 
         stock: 24, 
         category: "productos",
     },
@@ -75,3 +75,4 @@ export let productos = [
    },
 ]
 
+export default productos;
