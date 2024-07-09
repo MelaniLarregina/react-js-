@@ -1,4 +1,4 @@
-import Tarjeta from "../components/tarjetas/Tarjetas";
+import Tarjetas from "../components/tarjetas/Tarjetas";
 
 const ItemList = ( {items} ) => {
     console.log(items);
@@ -6,7 +6,7 @@ const ItemList = ( {items} ) => {
         <div style={{ display: "flex", gap: "10px"}}>
            {items.map((elemento) => {
             return (
-                <Tarjeta 
+                <Tarjetas
                 key={elemento.id}
                 img= {elemento.img}
                 title={elemento.title}
@@ -21,5 +21,3 @@ const ItemList = ( {items} ) => {
 };
 
 export default ItemList;
-[]
-{}

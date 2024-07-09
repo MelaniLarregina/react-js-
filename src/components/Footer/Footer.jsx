@@ -2,9 +2,18 @@ import './Footer.css'
 
 
 const Footer = () => {
-    return <div>
-    esto es el footer, aca tengo que seguir trabajando
-    </div>;
+    return (
+        <>
+        <ul>
+            <li>Contacto</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+
+        </ul>
+        </>
+        
+    )
+     
 }; 
 
 export default Footer; 
