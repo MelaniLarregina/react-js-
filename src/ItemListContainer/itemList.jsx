@@ -8,9 +8,11 @@ const ItemList = ( {items} ) => {
             return (
                 <Tarjeta 
                 key={elemento.id}
+                img= {elemento.img}
                 title={elemento.title}
                 description={elemento.description}
                 price= {elemento.price}
+                id = {elemento.id}
                 />
             );
            })};

@@ -1,9 +1,12 @@
-import { RiShoppingCartLine } from "react-icons/ri";
+import { Badge } from "@mui/material"
+import {Link} from "react-router-dom";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const CartWidget = () => {
     return(
         <div>
-            <RiShoppingCartLine color='black' size={40}/>
-            <span className='span'>0</span>
+            <Link to="/Carrito">
+            <Badge badgeContent={1} color="black"><ShoppingCartIcon color="action" /></Badge>
+            </Link>
         </div>
     );
 };
