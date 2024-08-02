@@ -1,7 +1,7 @@
 let productos = [
     {
-        id:1,
-        title: "leche de limpieza", 
+        
+        title: "Leche de limpieza", 
         price: 9000 ,
         description: "Sirve para eliminar el maquillaje y limpiar el rostro de pintura y base. " , 
         stock: 24, 
@@ -9,8 +9,8 @@ let productos = [
         img: "https://res-console.cloudinary.com/dvjzcl7ux/thumbnails/v1/image/upload/v1720069212/bGVjaGVfZGVfbGltcGllemEtX3JlYWN0X3JmeHFoNg==/drilldown" , 
     },
     {
-        id:2,
-        title: "tonico", 
+        
+        title: "Tonico", 
         price: 8500,
         description: "tónico facial cierra los poros y ayuda a equilibrar y preparar la piel para su posterior tratamiento." , 
         stock: 8, 
@@ -18,8 +18,8 @@ let productos = [
         img: "https://res-console.cloudinary.com/dvjzcl7ux/thumbnails/v1/image/upload/v1720069212/dG9uaWNvX2ZhY2lhbF9yZWFjdF9jdmJ0NW4=/drilldown" , 
     },
     {
-        id: 3,
-        title: "crema hidratante de dia", 
+        
+        title: "Crema hidratante de dia", 
         price: 10500,
         description: "La crema de día es de textura ligera y fluida, se encarga de hidratar y cuidar la piel de los radicales libres.", 
         stock:9 , 
@@ -27,8 +27,8 @@ let productos = [
         img: "https://res-console.cloudinary.com/dvjzcl7ux/thumbnails/v1/image/upload/v1720069212/Y3JyZW1hX2RlX2RpYV9yZWFjdF93aGsxYXc=/drilldown" , 
     },
     {
-        id:4 ,
-        title: "crema hidratante de noche", 
+       
+        title: "Crema hidratante de noche", 
         price: 20000,
         description: "están diseñadas para reparar y regenerar la piel durante el proceso de renovación celular nocturno", 
         stock:16 , 
@@ -36,8 +36,8 @@ let productos = [
         img: "https://res-console.cloudinary.com/dvjzcl7ux/thumbnails/v1/image/upload/v1720069212/Y3JlbWFfZGVfbm9jaGVfcmVhY3Rfdnhqb2F2/drilldown" , 
     },
     {
-        id:5 ,
-        title:"serum" , 
+
+        title:"Serum" , 
         price:15800 ,
         description: "La principal característica de este producto cosmético es su rápida absorción y elevada capacidad de penetración en la piel.", 
         stock:9 , 
@@ -45,8 +45,7 @@ let productos = [
         img: "https://res-console.cloudinary.com/dvjzcl7ux/thumbnails/v1/image/upload/v1720069212/c2VydW0tcmVhY3Rfam9wYm5s/drilldown" , 
     },
     {
-        id: 6,
-        title: "protector solar",
+        title: "Protector solar",
         price: 28600,
         description: "forma una barrera que impide que los rayos ultravioleta provoquen daño, sobre la parte externa de la dermis.",
         stock: 16,
@@ -54,8 +53,8 @@ let productos = [
         img: "https://res-console.cloudinary.com/dvjzcl7ux/thumbnails/v1/image/upload/v1720069212/cHJvdGVjdG9yX3NvbGFyLV9hdmVuZV9zMzQzdWY=/drilldown" , 
         },
     {
-         id: 7,
-         title: "serum + crema hidratante de noche",
+    
+         title: "Serum + crema hidratante de noche",
          price: 50000,
          description: "combo perfecto",
          stock: 12,
@@ -63,8 +62,7 @@ let productos = [
          img: "https://res-console.cloudinary.com/dvjzcl7ux/thumbnails/v1/image/upload/v1720069212/cmVhY2N0dHRfc3d2bnJq/drilldown" ,
     },
     {
-        id: 8,
-        title: "protector solar + hidratante de dia ",
+        title: "Protector solar + hidratante de dia ",
         price: 60000,
         description: "combo plenitud",
         stock: 19,

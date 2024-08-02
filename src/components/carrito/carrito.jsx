@@ -1,9 +1,11 @@
 import './carrito.css'
 import { useState } from "react";
+import { Counter } from './carritoConteiner';
 
-export const Carrito = () => {
 
-     const [contador, setContador] = useState(1)
+export const Carrito = ({onAdd, stock, inicial=1}) => {
+
+     const [contador, setContador] = useState(inicial);
 
     const restar = () => {
         if(contador > 1){
@@ -16,17 +18,14 @@ export const Carrito = () => {
     };
 
     const sumar = () => {
-        setContador(contador +1);
-
+        if(contador < stock){
+            setContador(contador +1);
+        } else {
+            alert("esta cantidad supera el stock disponible")
+        }
     };
 
-return (
-<div>
-  <button onClick={sumar}>Sumar</button>
-  <h2>{contador}</h2>
-  <button onClick={restar}>Restar</button>
-</div>
-);
+return <Counter contador={contador} sumar= {sumar} restar={restar} onAdd={onAdd} />;
 }
 
 export default Carrito; 

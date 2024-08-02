@@ -1,7 +1,10 @@
 import ItemList from "./itemList";
-import productos from "../productos";
+import {productos} from "../productos";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { FadeLoader } from 'react-spinners';
+import { db } from "../firebaseconfig";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 
 const ItemListContainer = () => {
@@ -10,25 +13,25 @@ const ItemListContainer = () => {
     const { name } = useParams();
 
     useEffect(() => {
-        const getProducts = new Promise((resolve, reject) => {
-            let x = true; 
-            let FiltroArray = productos.filter(product => product.category === name)
-            if (x){
-                resolve( name ? FiltroArray : productos);
-            }
-            else{
-                reject({message: "error", codigo: "404"});
-            }
-        });
+        let ProductosCollection = collection(db, "productos");
+        let consulta = ProductosCollection;
+        if(name){
+            consulta = query(ProductosCollection, where("category", "==", name));
+        }
+        let getProductos = getDocs(consulta);
+        getProductos.then((res) => {
+            let arrayValido = res.docs.map((product) => {
+                return {...product.data(), id: product.id};
 
-        getProducts
-        .then((res) => {
-            setItems(res);
+            });
+            setItems(arrayValido);
         })
-        .catch((error) => {
-            setError(error);
-        });
+      
     }, [ name ]);
+
+if( items.length === 0){
+    return <FadeLoader/>
+}
 
 return <ItemList items={items} />;
 };
